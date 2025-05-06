@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>AULA 03 - JAVA SCRIPT</title>
+</head>
+
+<body>
+
+
+
+    <div class="alinhadiv">
+
+        <h1>Exemplos Interativos de JavaScript</h1>
+
+        <!-- Exemplo 1: Faixa etária -->
+        <h2>Exemplo 1: Faixa Etária</h2>
+        <label for="idade">Digite sua idade:</label>
+        <input type="number" id="idade" placeholder="Exemplo: 20">
+        <button onclick="mostrarFaixaEtaria()">Enviar</button>
+        <p id="faixaEtaria"></p>
+
+
+        <!-- Exemplo 2: Armazenar Frutas -->
+        <h2>Exemplo 2: Armazenar Frutas</h2>
+        <label for="fruta1">Digite a primeira fruta:</label>
+        <input type="text" id="fruta1" placeholder="Exemplo: Maçã">
+        <label for="fruta2">Digite a segunda fruta:</label>
+        <input type="text" id="fruta2" placeholder="Exemplo: Banana">
+        <button onclick="mostrarFrutas()">Enviar</button>
+        <p id="listaFrutas"></p>
+
+        <!-- Exemplo 3: Nome e Idade -->
+        <h2>Exemplo 3: Nome e Idade</h2>
+        <label for="nome">Digite seu nome:</label>
+        <input type="text" id="nome" placeholder="Exemplo: Weskley">
+        <label for="idadeNome">Digite sua idade:</label>
+        <input type="number" id="idadeNome" placeholder="Exemplo: 30">
+        <button onclick="mostrarNomeIdade()">Enviar</button>
+        <p id="nomeIdade"></p>
+
+        <!-- Exemplo 4: Alterar Texto -->
+        <h2>Exemplo 4: Alterar Texto</h2>
+        <p id="textoInicial">Texto Inicial: Este é o texto original.</p>
+        <label for="novoTexto">Digite um novo texto:</label>
+        <input type="text" id="novoTexto" placeholder="Digite algo novo">
+        <button onclick="alterarTexto()">Alterar Texto</button>
+        <p id="textoAlterado"></p>
+
+        <!-- Exemplo 5: Alerta -->
+        <h2>Exemplo 5: Alerta</h2>
+        <button onclick="mostrarAlerta()">Clique aqui</button>
+
+        <br><br><br><br><br><br>
+
+        <h1>Exemplo Switch-Case</h1>
+        <label for="dia">Digite o número do dia (1 a 7):</label>
+        <input type="number" id="dia" min="1" max="7" placeholder="Exemplo: 3">
+        <button onclick="verificarDia()">Verificar Dia</button>
+        <p id="resultado"></p>
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
