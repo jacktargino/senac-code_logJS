@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro de Produtos</title>
+</head>
+<body>
+    <h1>Cadastro de Produtos</h1>
+
+    <!-- Seção de Cadastro de Produtos -->
+    <div class="section">
+        <h2>Cadastrar Produto</h2>
+        <label for="novoProduto">Nome do Produto:</label>
+        <input type="text" id="novoProduto" placeholder="Digite o nome do produto">
+        <button onclick="adicionarProduto()">Cadastrar Produto</button>
+    </div>
+
+    <!-- Seção para Consultar Produtos Cadastrados -->
+    <div class="section">
+        <h2>Consultar Produtos</h2>
+        <button onclick="consultarProdutos()">Mostrar Produtos Cadastrados</button>
+        <p id="produtos">Nenhum produto cadastrado ainda.</p>
+    </div>
+
+    <!-- Seção para Consultar Produto pelo Número no Array -->
+    <div class="section">
+        <h2>Consultar Produto por Número</h2>
+        <label for="numeroProduto">Número do Produto (índice):</label>
+        <input type="number" id="numeroProduto" placeholder="Digite o número do produto">
+        <button onclick="consultarProdutoPorNumero()">Buscar Produto</button>
+        <p id="produtoEncontrado">Informe um número para buscar o produto.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
