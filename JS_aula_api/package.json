@@ -1,0 +1,28 @@
+{
+  "name": "senac-code_logjs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./api.js"
+  },
+  
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jacktargino/senac-code_logJS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/jacktargino/senac-code_logJS/issues"
+  },
+  "homepage": "https://github.com/jacktargino/senac-code_logJS#readme",
+  "dependencies": {
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10"
+  },
+  "devDependencies": {},
+  "description": ""
+}

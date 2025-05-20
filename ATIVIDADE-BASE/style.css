@@ -1,0 +1,5 @@
+body { font-family: Arial, sans-serif; background: #f9f9f9; padding: 20px; }
+        section { margin-bottom: 30px; background: #fff; padding: 15px; border-radius: 10px; box-shadow: 0 0 10px #ccc; }
+        h2 { color: #333; }
+        input, button { padding: 5px; margin: 5px 0; }
+        p.resultado { font-weight: bold; color: #006600; }

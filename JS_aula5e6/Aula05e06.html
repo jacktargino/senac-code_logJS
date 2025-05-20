@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Aprendendo JavaScript: Delivery Simples</title>
+  
+</head>
+<body>
+    <h1>Aprendendo JavaScript: Delivery Simples</h1>
+    <p id="output">O resultado aparecerá aqui...</p>
+
+    <div class="container-item">
+        <h2>Variáveis</h2>
+        <label for="nomeProdutoVar">Nome do Produto:</label>
+        <input type="text" id="nomeProdutoVar" placeholder="Ex: Hambúrguer">
+        <label for="precoProdutoVar">Preço (R$):</label>
+        <input type="number" id="precoProdutoVar" placeholder="Ex: 10.00" step="0.01">
+        <button onclick="exemploVariaveis()">Mostrar Produto</button>
+    </div>
+
+    <div class="container-item">
+        <h2>Condicional (if/else)</h2>
+        <label for="statusPedidoIf">Status do Pedido:</label>
+        <input type="text" id="statusPedidoIf" placeholder="Ex: Entregue">
+        <button onclick="exemploCondicional()">Verificar Status</button>
+    </div>
+
+    <div class="container-item">
+        <h2>Switch case</h2>
+        <label for="tipoEntregaSwitch">Tipo de Entrega:</label>
+        <select id="tipoEntregaSwitch">
+            <option value="rapida">Rápida</option>
+            <option value="normal">Normal</option>
+        </select>
+        <button onclick="exemploSwitch()">Tempo de Entrega</button>
+    </div>
+
+    <div class="container-item">
+        <h2>Loop (for)</h2>
+        <label for="itensFor">Itens (separados por vírgula):</label>
+        <input type="text" id="itensFor" placeholder="Ex: Pão, Carne, Queijo">
+        <button onclick="exemploLoopFor()">Listar Itens</button>
+    </div>
+
+    <div class="container-item">
+        <h2>Arrays</h2>
+        <label for="cardapioArray">Cardápio (separados por vírgula):</label>
+        <input type="text" id="cardapioArray" placeholder="Ex: Pizza, Salada">
+        <button onclick="exemploArray()">Mostrar Cardápio</button>
+    </div>
+
+    <div class="container-item">
+        <h2>String</h2>
+        <label for="nomeClienteString">Nome do Cliente:</label>
+        <input type="text" id="nomeClienteString" placeholder="Ex: Ana Maria">
+        <button onclick="exemploString()">Nome em Maiúsculo</button>
+    </div>
+
+    <div class="container-item">
+        <h2>Funções</h2>
+        <label for="valor1Funcao">Valor 1 (R$):</label>
+        <input type="number" id="valor1Funcao" placeholder="Ex: 5.00" step="0.01">
+        <label for="valor2Funcao">Valor 2 (R$):</label>
+        <input type="number" id="valor2Funcao" placeholder="Ex: 3.00" step="0.01">
+        <button onclick="exemploFuncao()">Somar Valores</button>
+    </div>
+
+    <div class="container-item">
+        <h2>Manipulação do DOM</h2>
+        <label for="enderecoDOM">Seu Endereço:</label>
+        <input type="text" id="enderecoDOM" placeholder="Ex: Rua das Flores, 123">
+        <button onclick="exemploDOM()">Mostrar Endereço</button>
+    </div>
+
+    <div class="container-item">
+        <h2>Objetos</h2>
+        <label for="nomeObjeto">Nome:</label>
+        <input type="text" id="nomeObjeto" placeholder="Ex: João">
+        <label for="produtoObjeto">Produto:</label>
+        <input type="text" id="produtoObjeto" placeholder="Ex: Suco">
+        <button onclick="exemploObjeto()">Detalhes do Pedido</button>
+    </div>
+
+    <div class="container-item">
+        <h2>Herança</h2>
+        <label for="nomeBebidaHeranca">Nome da Bebida:</label>
+        <input type="text" id="nomeBebidaHeranca" placeholder="Ex: Coca-Cola">
+        <label for="precoBebidaHeranca">Preço (R$):</label>
+        <input type="number" id="precoBebidaHeranca" placeholder="Ex: 6.00" step="0.01">
+        <button onclick="exemploHeranca()">Detalhes da Bebida</button>
+    </div>
+
+    <div class="container-item">
+        <h2>Polimorfismo</h2>
+        <label for="tipoEntregaPoli">Tipo de Entrega:</label>
+        <select id="tipoEntregaPoli">
+            <option value="padrao">Padrão</option>
+            <option value="expressa">Expressa</option>
+        </select>
+        <button onclick="exemploPolimorfismo()">Tempo de Entrega (Poli)</button>
+    </div>
+
+    <div class="container-item">
+        <h2>Async/Await (Simulação)</h2>
+        <button onclick="exemploAsyncAwait()">Simular Pagamento</button>
+    </div>
+
+    <div class="container-item">
+        <h2>Constantes</h2>
+        <label for="taxaConst">Valor Base (R$):</label>
+        <input type="number" id="taxaConst" placeholder="Ex: 20.00" step="0.01">
+        <button onclick="exemploConst()">Mostrar com Taxa</button>
+    </div>
+
+    <div class="container-item">
+        <h2>Loop Do...While</h2>
+        <label for="contadorDoWhileSimples">Contar até:</label>
+        <input type="number" id="contadorDoWhileSimples" placeholder="Ex: 3" min="0">
+        <button onclick="exemploDoWhile()">Contar (Do...While)</button>
+    </div>
+
+    <div class="container-item">
+        <h2>Loop While</h2>
+        <label for="contadorWhileSimples">Contar até:</label>
+        <input type="number" id="contadorWhileSimples" placeholder="Ex: 2" min="0">
+        <button onclick="exemploWhile()">Contar (While)</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
