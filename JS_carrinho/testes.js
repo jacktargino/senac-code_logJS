@@ -1,39 +1,66 @@
+
 function pegarCarrinho() {
-
-    const carrinhoJSON = localStorage.getItem('carrinho');
-    return carrinhoJSON ? JSON.parse(carrinhoJSON) : [];
-
+    try {
+        const carrinhoJSON = localStorage.getItem('carrinho');
+        return carrinhoJSON ? JSON.parse(carrinhoJSON) : [];
+    } catch (e) {
+        console.error('Erro ao ler o carrinho do localStorage:', e);
+        return [];
+    }
 }
+
 
 function salvarCarrinho(carrinho) {
-
     localStorage.setItem('carrinho', JSON.stringify(carrinho));
-
 }
 
-// Atualiza a exibição dos itens do carrinho na tela, e o valor total
 function atualizarCarrinho() {
-    const carrinho = pegarCarrinho(); // Obtém o carrinho atual
-    let total = 0;                    // Variável acumuladora do valor total
-    let listaHTML = '<ul>';          // Começa a construir a lista de itens em HTML
+    const carrinho = pegarCarrinho();
+    let total = 0;
+    let listaHTML = '<ul>';
 
-    // Para cada item no carrinho:
+
     carrinho.forEach((item, index) => {
-        total += item.preco * item.quantidade; // Soma o valor total (preço × quantidade)
-        
-        // Adiciona o item à lista HTML com um botão para remover 1 unidade
+        total += item.preco * item.quantidade;
+
         listaHTML += `<li>
-         
             ${item.nome} - R$ ${item.preco.toFixed(2).replace('.', ',')} (x${item.quantidade})
             <button onclick="decrementarItem(${index})" style="margin-left:10px; background-color:#d9534f; color:white; border:none; padding:3px 8px; border-radius:3px;">-</button>
         </li>`;
     });
 
-    listaHTML += '</ul>'; // Fecha a lista
+    listaHTML += '</ul>';
 
-    // Mostra os itens do carrinho na div específica
+
     document.getElementById('itensCarrinho').innerHTML = carrinho.length ? listaHTML : 'Carrinho vazio.';
 
-    // Atualiza o valor total na tela
+
     document.getElementById('total').textContent = 'Total: R$ ' + total.toFixed(2).replace('.', ',');
+}
+
+function adicionarProduto(nome, preco) {
+    const carrinho = pegarCarrinho();
+    const existente = carrinho.find(item => item.nome === nome);
+
+    if (existente) {
+        existente.quantidade += 1;
+    } else {
+        carrinho.push({ nome, preco, quantidade: 1 });
+    }
+
+    salvarCarrinho(carrinho);
+    atualizarCarrinho();
+}
+
+function decrementarItem(index) {
+    const carrinho = pegarCarrinho();
+
+    if (carrinho[index].quantidade > 1) {
+        carrinho[index].quantidade -= 1;
+    } else {
+        carrinho.splice(index, 1);
+    }
+
+    salvarCarrinho(carrinho);
+    atualizarCarrinho();
 }
