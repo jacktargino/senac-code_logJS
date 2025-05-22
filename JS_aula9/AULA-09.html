@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="style.css">
+  <title>Exemplos JS - Cadastro de Lanches</title>
+</head>
+
+<body>
+
+  <h1>Exemplos JS - Cadastro de Lanches</h1>
+
+  <!-- 1. forEach - Listar lanches -->
+  <h2>1. forEach - Listar lanches do pedido</h2>
+  <input id="input1" placeholder="Ex: X-Burguer, Batata, Refrigerante" />
+  <button onclick="mostrarLanches()">Mostrar lanches</button>
+  <ul id="lista1"></ul>
+
+  <!-- 2. addEventListener - Confirmar pedido -->
+  <h2>2. addEventListener - Confirmar pedido</h2>
+  <button id="btn2">Confirmar Pedido</button>
+  <p id="msg2"></p>
+
+  <!-- 3. event - Mostrar posição do clique -->
+  <h2>3. Evento - Mostrar posição do clique no botão</h2>
+  <button id="btn3">Clique aqui para mostrar posição</button>
+  <p id="msg3"></p>
+
+  <!-- 4. dataset - Mostrar dados do lanche -->
+  <h2>4. dataset - Mostrar informações do lanche</h2>
+  <button id="btn4" data-id="25" data-nome="X-Burguer" data-preco="15.50">Adicionar X-Burguer</button>
+  <p id="msg4"></p>
+
+  <!-- 5. localStorage - Salvar nome do cliente -->
+  <h2>5. localStorage - Salvar e mostrar nome do cliente</h2>
+  <input id="input5" placeholder="Ex: João Silva" />
+  <button onclick="salvarNome()">Salvar nome</button>
+  <p id="msg5"></p>
+
+  <!-- 6. JSON.parse - Converter texto JSON do pedido -->
+  <h2>6. JSON.parse - Converter texto JSON do pedido (exemplo: {"lanche":"X-Burguer","quantidade":2})</h2>
+  <input id="input6" placeholder='Ex: {"lanche":"X-Burguer","quantidade":2} (JSON)' />
+  <button onclick="converterJSON()">Converter para objeto</button>
+  <pre id="msg6"></pre>
+
+  <!-- 7. getItem - Buscar dado salvo no localStorage -->
+  <h2>7. getItem - Buscar dado salvo no localStorage</h2>
+  <input id="input7" placeholder="Ex: nomeCliente" />
+  <button onclick="buscarItem()">Buscar dado</button>
+  <p id="msg7"></p>
+
+  <!-- 8. appendChild - Adicionar pedido à lista -->
+  <h2>8. appendChild - Adicionar pedido na lista</h2>
+  <input id="input8" placeholder="Ex: Suco de Laranja" />
+  <button onclick="adicionarLista()">Adicionar ao pedido</button>
+  <ul id="lista8"></ul>
+
+  <!-- 9. toFixed - Formatar preço -->
+  <h2>9. toFixed - Formatar preço do lanche</h2>
+  <input id="input9" type="number" step="any" placeholder="Ex: 15.50" />
+  <button onclick="formatarPreco()">Formatar preço</button>
+  <p id="msg9"></p>
+
+  <!-- 10. createElement - Criar nota para pedido -->
+  <h2>10. createElement - Criar nota para pedido</h2>
+  <input id="input10" placeholder="Ex: Sem cebola, por favor" />
+  <button onclick="criarNota()">Adicionar nota</button>
+  <div id="div10"></div>
+
+  <!-- 11. length - Contar lanches no pedido -->
+  <h2>11. length - Contar quantidade de lanches no pedido</h2>
+  <input id="input11" placeholder="Ex: X-Burguer, Batata, Refrigerante" />
+  <button onclick="contarLanches()">Contar lanches</button>
+  <p id="msg11"></p>
+
+  <!-- 12. Date.now - Mostrar hora do pedido -->
+  <h2>12. Date.now - Mostrar timestamp e data do pedido</h2>
+  <button onclick="mostrarTimestamp()">Mostrar data e hora</button>
+  <p id="msg12"></p>
+
+  <!-- 13. push - Adicionar lanche ao pedido -->
+  <h2>13. push - Adicionar lanche ao pedido</h2>
+  <input id="input13" placeholder="Ex: Milkshake" />
+  <button onclick="adicionarPush()">Adicionar lanche</button>
+  <p id="msg13"></p>
+
+  <!-- 14. toLocaleString - Mostrar data atual formatada -->
+  <h2>14. toLocaleString - Mostrar data atual formatada</h2>
+  <button onclick="mostrarData()">Mostrar data atual</button>
+  <p id="msg14"></p>
+
+  <!-- 15. JSON.stringify - Converter pedido para texto JSON -->
+  <h2>15. JSON.stringify - Converter pedido em texto JSON (exemplo: {"lanche":"X-Burguer","quantidade":2})</h2>
+  <input id="input15" placeholder='Ex: {"lanche":"X-Burguer","quantidade":2} (JSON)' />
+  <button onclick="converterStringify()">Converter para JSON</button>
+  <pre id="msg15"></pre>
+
+  <!-- 16. style.display - Mostrar ou esconder informações -->
+  <h2>16. style.display - Mostrar ou esconder detalhes do pedido</h2>
+  <div id="div16">Detalhes do pedido aqui.</div>
+  <button onclick="toggleDisplay()">Mostrar / Esconder detalhes</button>
+
+  <!-- Botão para limpar todo o localStorage -->
+  <h2>Limpar Storage</h2>
+
+  <button onclick="limparStorageGeral()">Limpar todo o localStorage</button>
+
+  <!-- Botão e input para limpar chave específica -->
+  <div style="margin-top: 10px;">
+    <h2>Limpar Chave Especifica</h2>
+    <input id="inputLimparChave" placeholder="Digite a chave para remover" />
+    <button onclick="limparChaveEspecifica(document.getElementById('inputLimparChave').value)">Remover chave
+      específica</button>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>

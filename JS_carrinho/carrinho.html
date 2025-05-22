@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Carrinho Simples com Quantidade</title>
+</head>
+
+<body>
+
+    <h1>Produtos</h1>
+
+    <div class="produto" data-nome="X-Burguer" data-preco="15.50">
+        <strong>X-Burguer</strong><br />
+        Preço: R$ 15,50
+        <button onclick="adicionarProduto('X-Burguer', 15.50)">Adicionar ao carrinho</button>
+    </div>
+
+    <div class="produto" data-nome="Batata Frita" data-preco="8.00">
+        <strong>Batata Frita</strong><br />
+        Preço: R$ 8,00
+        <button onclick="adicionarProduto('Batata Frita', 8.00)">Adicionar ao carrinho</button>
+    </div>
+
+    <div class="produto" data-nome="Refrigerante" data-preco="6.00">
+        <strong>Refrigerante</strong><br />
+        Preço: R$ 6,00
+        <button onclick="adicionarProduto('Refrigerante', 6.00)">Adicionar ao carrinho</button>
+    </div>
+
+    <div class="produto" data-nome="Suco Natural" data-preco="7.50">
+        <strong>Suco Natural</strong><br />
+        Preço: R$ 7,50
+        <button onclick="adicionarProduto('Suco Natural', 7.50)">Adicionar ao carrinho</button>
+    </div>
+
+    <div id="total">Total: R$ 0,00</div>
+
+    <!-- Carrinho com itens exibidos -->
+    <div id="itensCarrinho"></div>
+
+    <button id="limpar" onclick="limparCarrinho()">Limpar carrinho</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

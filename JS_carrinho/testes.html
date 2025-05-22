@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="produto" data-nome="X-Burguer" data-preco="15.50">
+        <strong>X-Burguer</strong><br />
+        Preço: R$ 15,50
+        <button onclick="adicionarProduto('X-Burguer', 15.50)">Adicionar ao carrinho</button>
+    </div>
+
+    <div id="total">Total: R$ 0,00</div>
+
+    <!-- Carrinho com itens exibidos -->
+    <div id="itensCarrinho"></div>
+
+    <button id="limpar" onclick="limparCarrinho()">Limpar carrinho</button>
+
+    <script src="script.js"></script>
+    </body>
+
+</html>

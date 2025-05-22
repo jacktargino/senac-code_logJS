@@ -1,0 +1,82 @@
+/* ===== Layout geral ===== */
+body {
+    font-family: Arial, sans-serif;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+/* ===== Título ===== */
+h1 {
+    color: #2a7ae2;
+}
+
+/* ===== Produtos disponíveis ===== */
+.produto {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/* ===== Botões padrão ===== */
+button {
+    background-color: #2a7ae2;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+button:hover {
+    background-color: #1f5bbf;
+}
+
+/* ===== Total do carrinho ===== */
+#total {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* ===== Botão limpar carrinho ===== */
+#limpar {
+    background-color: #d9534f;
+    margin-top: 20px;
+}
+
+#limpar:hover {
+    background-color: #b52b27;
+}
+
+/* ===== Itens do carrinho exibidos abaixo do total ===== */
+#itensCarrinho ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+#itensCarrinho li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+}
+
+/* ===== Botão de remover item individual (-) ===== */
+#itensCarrinho li button {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 4px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#itensCarrinho li button:hover {
+    background-color: #b52b27;
+}

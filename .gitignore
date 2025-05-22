@@ -1,0 +1,9 @@
+# Ignorar dependências
+node_modules/
+
+# Ignorar arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# Ignorar IDEs
+.vscode/
