@@ -3,6 +3,7 @@ function mostrarLanches() {
     const texto = document.getElementById('input1').value;
     const lanches = texto.split(',');
     const lista = document.getElementById('lista1');
+    
     lista.innerHTML = '';
     lanches.forEach(lanche => {
         const item = lanche.trim();
@@ -29,7 +30,8 @@ document.getElementById('btn4').addEventListener('click', function () {
     const id = this.dataset.id;
     const nome = this.dataset.nome;
     const preco = this.dataset.preco;
-    document.getElementById('msg4').textContent = `Lanche: ${nome} (ID: ${id}) - R$ ${preco} adicionado ao pedido.`;
+    document.getElementById('msg4').textContent =
+    `Lanche: ${nome} (ID: ${id}) - R$ ${preco} adicionado ao pedido.`;
 });
 
 // 5. localStorage - Salvar e mostrar nome do cliente

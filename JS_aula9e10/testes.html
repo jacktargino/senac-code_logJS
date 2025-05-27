@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+  <!-- 16. style.display - Mostrar ou esconder informações -->
+  <h2>16. style.display - Mostrar ou esconder detalhes do pedido</h2>
+  <div id="div16">Detalhes do pedido aqui.</div>
+  <button onclick="toggleDisplay()">Mostrar / Esconder detalhes</button>
+
+  <!-- Botão para limpar todo o localStorage -->
+  <h2>Limpar Storage</h2>
+
+  <button onclick="limparStorageGeral()">Limpar todo o localStorage</button>
+
+  <!-- Botão e input para limpar chave específica -->
+  <div style="margin-top: 10px;">
+    <h2>Limpar Chave Especifica</h2>
+    <input id="inputLimparChave" placeholder="Digite a chave para remover" />
+    <button onclick="limparChaveEspecifica(document.getElementById('inputLimparChave').value)">Remover chave
+      específica</button>
+  </div>
+</body>
+
+</html>
