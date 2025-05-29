@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Caixa Eletrônico</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <section class="titlePage">
+    <h1>Desafio de código em JavaScript</h1>
+    <br><br><br>
+  </section>
+
+  <section>
+  <div class="tela-caixa">
+    <h2>🏦 Caixa Eletrônico</h2>
+    <button class="btn-opcao" onclick="verSaldo()">1 - Ver Saldo</button>
+    <button class="btn-opcao" onclick="mostrarInput('depositar')">2 - Depositar</button>
+    <button class="btn-opcao" onclick="mostrarInput('sacar')">3 - Sacar</button>
+    <button class="btn-opcao" onclick="sair()">4 - Sair</button>
+
+    <input type="number" id="inputValor" placeholder="Digite o valor" style="display:none" />
+    <div id="resultado"></div>
+  </div>
+</section>
+
+<section>
+  <footer>
+    <h3>
+      © 2025 Copyright - Jackson Targino
+    </h3>
+  </footer>
+</section>
+
+  <script src="script.js"></script>
+</body>
+</html>

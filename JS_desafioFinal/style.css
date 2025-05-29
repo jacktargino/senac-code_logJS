@@ -1,0 +1,67 @@
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #001f3f;
+  color: #00ffcc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+
+.titlePage {
+  font-size: 24px;
+}
+
+.tela-caixa {
+  width: 360px;
+  background-color: #003366;
+  border: 4px solid #00ffcc;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.btn-opcao {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  background-color: #00ffcc;
+  color: #003366;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-opcao:hover {
+  background-color: #00cccc;
+}
+
+#inputValor {
+  margin-top: 15px;
+  width: 80%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  text-align: center;
+}
+
+#resultado {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #00ffcc;
+}
+
+footer {
+  justify-content: center;
+  margin-top: 80px  ;
+}
